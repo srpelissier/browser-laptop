@@ -22,7 +22,10 @@ function config () {
             /\.min.js$/,
             path.resolve(__dirname, 'app', 'extensions', '*')
           ],
-          loader: 'babel'
+          loader: 'babel',
+          query: {
+            presets: ['es2015']
+          }
         },
         {
           test: /\.less$/,
