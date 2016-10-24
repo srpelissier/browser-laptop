@@ -85,9 +85,7 @@ function production () {
     compress: {
       warnings: true
     },
-    mangle: {
-      except: ['module', 'exports', 'require']
-    }
+    mangle: false
   }))
   return prod
 }
