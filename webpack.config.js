@@ -83,7 +83,7 @@ function production () {
   prod.plugins.push(new webpack.optimize.OccurrenceOrderPlugin(true))
   prod.plugins.push(new webpack.optimize.UglifyJsPlugin({
     compress: {
-      warnings: false
+      warnings: true
     },
     mangle: {
       except: ['module', 'exports', 'require']
