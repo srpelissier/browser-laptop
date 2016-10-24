@@ -82,10 +82,10 @@ function production () {
   prod.plugins.push(new webpack.optimize.DedupePlugin())
   prod.plugins.push(new webpack.optimize.OccurrenceOrderPlugin(true))
   prod.plugins.push(new webpack.optimize.UglifyJsPlugin({
-    compress: {
-      warnings: true
-    },
-    mangle: false
+    compress: false,
+    mangle: {
+      except: ['module', 'exports', 'require', 'punycode']
+    }
   }))
   return prod
 }
