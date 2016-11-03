@@ -12,7 +12,7 @@ sudo apt-get install -y gdebi && sudo gdebi brave.deb
 ## Ubuntu AMD64:
 
 ```
-wget -O brave.deb https://laptop-updates.brave.com/latest/dev/ubuntu64
+wget -O brave.deb https://laptop-updates.brave.com/latest/ubuntu64
 sudo dpkg -i ./brave.deb
 ```
 
